@@ -13,7 +13,7 @@ RUN git clone https://github.com/MXRRI/Netfoll
 WORKDIR /Netfoll
 RUN pip install --no-warn-script-location --no-cache-dir -r requirements.txt
 
-EXPOSE 8080
+EXPOSE 28431
 RUN mkdir /data
 
 CMD python -m hikka
