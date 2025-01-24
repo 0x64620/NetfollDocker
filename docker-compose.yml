@@ -1,7 +1,7 @@
 version: "3"
 services:
   worker:
-    container_name: "hikka-worker"
+    container_name: "neoworker"
     build:
       context: .
     volumes:
@@ -10,7 +10,7 @@ services:
     restart: unless-stopped
     command: "python -m hikka"
     ports:
-      - "${EXTERNAL_PORT:-8080}:8080"
+      - "${EXTERNAL_PORT:-21247}:8080"
 
 volumes:
   worker:
